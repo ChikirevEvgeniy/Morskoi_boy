@@ -223,9 +223,9 @@ class Game:
         u = str(self.us.board).split('\n')
         a = str(self.ai.board).split('\n')
 
-        hu = " Ваше поле:".ljust(len(u[1]), ' ')
+        hu = " Доска пользователя:".ljust(len(u[1]), ' ')
 
-        ha = " Поле противника:".ljust(len(u[1]), ' ')
+        ha = " Доска компьютера:".ljust(len(u[1]), ' ')
 
         print(hu, ' ' * 5, ha)
         for u, a in zip(u, a):
